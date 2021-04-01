@@ -1,0 +1,52 @@
+
+        body {
+
+            background-color: rgb(204, 204, 181);
+        }
+
+        h1 {
+            color: black;
+            font-size: 70px;
+            font-family: 'Ubuntu', sans-serif;
+
+
+        }
+        .heading{
+            font-size: 25px;
+        }
+        .lead{
+            font-size: 20px;
+            margin-left: 76px;
+            color: black;
+            font-family: 'Ubuntu Condensed', sans-serif;
+        }
+
+
+     .card-block{
+         color: rgb(53, 8, 138);
+         font-family: Georgia, 'Times New Roman', Times, serif;
+         font-weight: bold;
+         font-stretch: wider;
+     }
+     .head{
+         color: rgb(160, 68, 75);
+     }
+       
+
+
+        footer {
+            margin-top: 240px;
+        }
+        nav{
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+
+
+        /* \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+        @media (max-width: 575.98px) 
+        {
+            .lead{
+                font-size: 15px;
+            }
+        }

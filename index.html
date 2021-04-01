@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      <link rel="stylesheet" href="style.css">
+
+    <title>Weight Converter</title>
+    
+</head>
+
+<body>
+
+
+
+    <!-- Header  -->
+    <header>
+        <div class="bg-dark collapse " id="navbarHeader" >
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-md-7 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-muted">I am Diwakar and I'm a webDeveloper
+                    I am currently persuing Bachelor of Computer Application(BCA) from Integral University ,Lucknow.I have a diverse set of Skills,HTML,CSS
+                    ,JavaScript,Bootstrap all the way to PHP.I love what I am doing and I am highly motivated to collaborate with someone.If you are up into some projects.just Let me know!</p>
+              </div>
+              <div class="col-sm-4 offset-md-1 py-4">
+                <h4 class="text-white">Contact</h4>
+                <ul class="list-unstyled">
+                    <li><a href="https://thakurdiwakar.github.io/devguy/" target="_blank"class="text-white">My Portfolio Website</a></li>
+                  <li><a href="https://twitter.com/ThakurDiwakar14" target="_blank"class="text-white">Follow on Twitter</a></li>
+                  <li><a href="#" class="text-white">Follow on Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/in/diwakar-singh-0204621b6/" target="_blank" class="text-white">Connect on Linkedin</a></li>
+                
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+          <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg> -->
+              <strong>Home</strong>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+    
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+                <p class="lead">Pounds to Grams,Kilograms,Ounces and Stones</p>
+                <form>
+                    <div class="form-group">
+                        <input id="lbsInput" type="number" class="form-control form-control-lg"
+                            placeholder="Enter Pounds...">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class=" card card-primary mb-2">
+                        <div class="card-block">
+                            <h4 class="head">Grams:</h4>
+                            <div id="gramsOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-success mb-2">
+                        <div class="card-block">
+                            <h4 class="head">Kilograms:</h4>
+                            <div id="kgOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-danger mb-2">
+                        <div class="card-block">
+                            <h4 class="head">Ounces:</h4>
+                            <div id="ozOutput"></div>
+                        </div>
+                    </div>
+                        <div class="card card-danger mb-2">
+                            <div class="card-block">
+                                <h4 class="head">Stones:</h4>
+                                <div id="stOutput"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Grams to  Pounds,Ounces,Kilograms and Stones------ Weight Converter-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1  class="display-4 text-center mb-3">Weight Converter</h1>
+                <p class="lead"> Grams to Pounds,Kilograms,Ounces and Stones</p>
+                
+                <form>
+                    <div class="form-group">
+                        <input id="lbInput" type="number" class="form-control form-control-lg"
+                            placeholder="Enter Grams...">
+                    </div>
+                </form>
+                <div id="newOutput">
+                    <div class=" card card-primary mb-2">
+                        <div class="card-block">
+                            <h4 class="head">Pounds:</h4>
+                            <div id="poundsOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-success mb-2">
+                        <div class="card-block">
+                            <h4 class="head"s>Ounces:</h4>
+                            <div id="ouncesOutput"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-danger mb-2">
+                        <div class="card-block">
+                            <h4 class="head">Kilograms:</h4>
+                            <div id="kggOutput"></div>
+                        </div>
+                    </div>
+                        <div class="card card-danger mb-2">
+                            <div class="card-block">
+                                <h4 class="head">Stones:</h4>
+                                <div id="stsOutput"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+      <!-- Ounces to  Pounds,Grams,Kilograms and Stones------ Weight Converter-->
+
+
+      
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1  class="display-4 text-center mb-3">Weight Converter</h1>
+                <p class="lead">Ounces to Pounds,Kilograms and Stones</p>
+               
+                
+              
+                <form>
+                    <div class="form-group">
+                        <input id="lb2Input" type="number" class="form-control form-control-lg"
+                            placeholder="Enter Ounces...">
+                    </div>
+                </form>
+                <div id="Output2">
+                    <div class=" card card-primary mb-2">
+                        <div class="card-block">
+                            <h4 class="head">Pounds:</h4>
+                            <div id="pounds2Output"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-success mb-2">
+                        <div class="card-block">
+                            <h4 class="head">Ounces:</h4>
+                            <div id="grames2Output"></div>
+                        </div>
+                    </div>
+
+                    <div class="card card-danger mb-2">
+                        <div class="card-block">
+                            <h4 class="head">Kilograms:</h4>
+                            <div id="kgg2Output"></div>
+                        </div>
+                    </div>
+                        <div class="card card-danger mb-2">
+                            <div class="card-block">
+                                <h4 class="head">Stones:</h4>
+                                <div id="sts2Output"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- Stones to Pounds,Grams,Kilograms and  Ounces -->
+      
+   <div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h1  class="display-4 text-center mb-3">Weight Converter</h1>
+            <p class="lead">Stones to Pounds,Kilograms and Stones</p>
+           
+            
+          
+            <form>
+                <div class="form-group">
+                    <input id="lb3Input" type="number" class="form-control form-control-lg"
+                        placeholder="Enter Stones...">
+                </div>
+            </form>
+            <div id="Output3">
+                <div class=" card card-primary mb-2">
+                    <div class="card-block">
+                        <h4 class="head">Pounds:</h4>
+                        <div id="pounds3Output"></div>
+                    </div>
+                </div>
+
+                <div class="card card-success mb-2">
+                    <div class="card-block">
+                        <h4 class="head">Ounces:</h4>
+                        <div id="grames3Output"></div>
+                    </div>
+                </div>
+
+                <div class="card card-danger mb-2">
+                    <div class="card-block">
+                        <h4 class="head">Kilograms:</h4>
+                        <div id="kgg3Output"></div>
+                    </div>
+                </div>
+                    <div class="card card-danger mb-2">
+                        <div class="card-block">
+                            <h4 class="head">Stones:</h4>
+                            <div id="sts3Output"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <!-- <div class="container p-4 pb-0"> -->
+
+        </section>
+        <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright :Developed by pyCoder:Diwakar Singh
+            <a class="text-white" href=""></a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="weight.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
